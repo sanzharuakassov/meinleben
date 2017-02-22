@@ -1,5 +1,12 @@
-<h1>New User</h1>
-
-<%= render 'form', user: @user %>
-
-<%= link_to 'Back', users_path %>
+<div class="rWrap">
+    <div class="container-fluid registration">
+        <div class="row">
+            <div class="panel panel-default col-xs-12 col-md-4 col-md-offset-4">
+                <div class="panel-body">
+                    <%= render 'form', user: @user %>
+                        <%= link_to 'Back', users_path %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

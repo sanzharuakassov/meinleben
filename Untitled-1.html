@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-  <title>mein leben</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-  <!-- Latest compiled and minified JS -->
-  <script src="//code.jquery.com/jquery.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <title>profile page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <!-- Latest compiled and minified JS -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-  <%= render 'shared/favicon' %>
+    <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+          <%= render 'shared/favicon' %>
 </head>
 
 <body>
@@ -28,23 +27,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">MeinLeben</a>
+          <a class="navbar-brand" href="#">MeinLeben</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">To Do List <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Followers</a></li>
+          <li><a href="#">Following</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Photos</a></li>
               <li><a href="#">Videos</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Followers</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">Settings</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#">Games</a></li>
             </ul>
           </li>
         </ul>
@@ -72,12 +71,12 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
- <%= yield%>
-  <div class="footer">
-    <div class="container ">
-      <p>All Rights Reserved 2017</p>
-    </div>
-  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"></div>
+      <div class="col-lg-4 col-md-6 col-xs-12 ">profile photo
+      </div>
+
 </body>
 
 </html>
